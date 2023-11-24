@@ -1,21 +1,26 @@
+@font-face{
+    font-family: 'grueso';
+    src: url('../fuentes/coolvetica.otf') ;
+    }
 *{
     padding: 0;
     border: 0;
     margin: 0;
+    font-family: 'grueso';
 }
-
-/* fondo de la pagina blanca */
-html{
-    background-color: rgb(255, 255, 255);
+body{
+    padding: 0;
+    border: 0;
+    margin: 0; 
+    background-color: white; 
 }
-
-/* barra de navegacion  */
 nav{
  background-color: rgb(255, 255, 255);
  text-align: center;
  position: fixed;
  z-index: 1 ;
  width: 100%;
+ background-color: rgba(243, 243, 243, 0.705);
  
 }
 /* para configurar propiedad de la manzanita */
@@ -24,9 +29,8 @@ nav img{
     padding-top: 7px;
     padding-left: 7px;
 }
-
 /* configrar la letra y color del nav */
-.navBotones{
+nav a{
     display: inline-block;
    text-decoration: none;
     color:rgb(0, 0, 0);
@@ -36,20 +40,18 @@ nav img{
     font-size: 120%;
 padding: 10px 20px;
 }
-
 /* cada vez q toco letra del nav se agrande */
-.navBotones:hover{
+nav a:hover{
     color: rgb(0, 0, 0);
     font-size: 150%;
     font-style: italic;
     font-weight: 900;
 }
-
 /* configurar los tamaños de los articulos o secciones */
 section{
-    margin-top:  10px;
+   
     display: flex;
-    padding: 5px 0 ;
+    padding: 45px 0 ;
     width: 100%;
     height: 870px;
     
@@ -62,17 +64,15 @@ section img{
     object-fit: cover;
     transition: .6s ease;  
     cursor:crosshair; 
-    /*cada vez q toque la imagen el mouse cambia de diseño  */
+        /*cada vez q toque la imagen el mouse cambia de diseño  */
 }
-
 /* cada vez q todo la imagen se mueva */
 section img:hover{
     width: 400px;
     
     filter: contrast(120%);
-/* mayor resolucion la imagen */
+    /* mayor resolucion la imagen */
 }
-
 /* la parte de abajo los credito */
 footer{
     display: flex;
@@ -104,3 +104,5 @@ figure img {
     width: 10%;
     
 }
+
+
